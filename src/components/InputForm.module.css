@@ -1,0 +1,65 @@
+.form-control{
+    position: relative;
+    padding: 50px;
+    display:flex;
+    flex-direction: column;
+    /* align-items:space-around;
+    justify-content: center; */
+    background: rgb(199, 196, 196);
+   max-width: 500px;
+    margin: 20px auto;
+    border-radius: 5px;
+} 
+.inputForm{
+    padding:10px;
+    display:flex;
+    flex-direction: column;
+}
+.inputForm label{
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.inputForm input{
+    padding: 5px;
+    border:none;
+    outline-style: none;
+    border-radius: 5px;
+}
+.inputForm input:focus{
+    border:5px solid orchid;
+    border-radius:5px;
+}
+.action{
+    display:flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+.action button{
+    padding: 8px 16px;
+    font-weight: bold;
+    background-color: rgb(119, 14, 119);
+    border: 2px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+    outline-style:none;
+    color: white;
+}
+.invalid input{
+    background: rgb(243, 96, 96);
+}
+.invalid .p{
+    color:red;
+}
+.action button:disabled{
+    background-color: rgb(241, 50, 50);
+    color: #292929;
+    border-color: #ccc;
+    cursor:not-allowed;
+}
+.emailinvalid input{
+    background: rgb(243, 96, 96);
+}
+.emailinvalid .p{
+    color:red;
+}
